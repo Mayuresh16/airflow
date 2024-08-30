@@ -287,14 +287,14 @@ class TestSFTPToGCSOperator:
             [
                 mock.call(
                     bucket_name=TEST_BUCKET,
-                    object_name="destination_dir/test_object1.txt",
+                    object_name="test_object1.txt",
                     mime_type=DEFAULT_MIME_TYPE,
                     filename=mock.ANY,
                     gzip=False,
                 ),
                 mock.call(
                     bucket_name=TEST_BUCKET,
-                    object_name="destination_dir/test_object2.txt",
+                    object_name="test_object2.txt",
                     mime_type=DEFAULT_MIME_TYPE,
                     filename=mock.ANY,
                     gzip=False,
